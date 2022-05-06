@@ -15,6 +15,7 @@ namespace TheBugNet6.Models
         public string LastName { get; set; }
 
         [NotMapped]
-        public string FullName { get; set; }
+        [Display(Name = "Full Name")]
+        public string FullName { get { return $"{FirstName} {LastName}"; } }
     }
 }
