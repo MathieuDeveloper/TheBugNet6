@@ -4,9 +4,9 @@ using TheBugNet6.Data;
 using TheBugNet6.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-//var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection");;
+var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection");;
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+//var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
