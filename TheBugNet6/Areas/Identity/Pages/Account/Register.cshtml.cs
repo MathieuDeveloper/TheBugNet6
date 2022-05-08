@@ -82,10 +82,12 @@ namespace TheBugNet6.Areas.Identity.Pages.Account
 
             // Mathieu: ajoute ça update .NET5 to .NET6
             [Required]
+            [DataType(DataType.Text)]
             [Display(Name = "First Name")]
             public string FirstName { get; set; }
 
             [Required]
+            [DataType(DataType.Text)]
             [Display(Name = "Last Name")]
             public string LastName { get; set; }
 

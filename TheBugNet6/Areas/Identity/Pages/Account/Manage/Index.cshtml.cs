@@ -82,7 +82,7 @@ namespace TheBugNet6.Areas.Identity.Pages.Account.Manage
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
 
             Username = userName;
-
+            //Mathieu: ajoute ça (.NET5 to .NET6)
             Input = new InputModel
             {
                 FirstName = user.FirstName,
@@ -127,7 +127,7 @@ namespace TheBugNet6.Areas.Identity.Pages.Account.Manage
                     return RedirectToPage();
                 }
             }
-
+            //Mathieu: ajoute ça (.NET5 to .NET6)
             if (Input.FirstName != user.FirstName)
             {
                 user.FirstName = Input.FirstName;
